@@ -17,7 +17,6 @@ public class PalindromePermutaion {
     static boolean isPermuationPalindrome(String a) {
         HashMap<Character, Integer> hm = new HashMap<>();
 
-        int evenCount = 0;
         int oddCount = 0;
 
         for (int i = 0; i < a.length(); i++) {
@@ -27,7 +26,6 @@ public class PalindromePermutaion {
         for (Map.Entry<Character, Integer> entry : hm.entrySet()) {
             // System.out.println(entry.getKey() + " " + entry.getValue());
             if (entry.getValue() % 2 == 0) {
-                evenCount++;
             } else {
                 oddCount++;
             }
